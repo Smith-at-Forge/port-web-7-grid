@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    */
+    .container {
+      display: grid;
+      height: 100vh;
+      align-content: center;
+      justify-content: center;
+    }
+    .painting {
+      background-color: #000;
+      width: 748px;
+      height: 748px;
+      display: grid;
+      /*  Measurements don't seem to add up to 748px
+          Rows: Adjusted the 4th row to 15px to make the total height 748px
+          Columns: Replaced 153px with 162px for the 4th column to match the 748px width */
+      grid-template: 414px 9px 130px 15px 155px 9px 16px / 320px 9px 198px 162px 9px 50px;
+    }
+    .red {
+      background-color: #E72F24;
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+    .blue {
+      background-color: #004592;
+      grid-row: 3/4;
+      grid-column: 6/7;
+    }
+    .yellow {
+      background-color: #F9D01E;
+      grid-row: 7/8;
+      grid-column: 3/4;
+    }
+    .white1 {
+      background-color: #F0F1EC;
+      grid-row: 1/2;
+      grid-column: 3/7;
+    }
+    .white2 {
+      background-color: #F0F1EC;
+      grid-row: 3/6;
+      grid-column: 1/2;
+    }
+    .white3 {
+      background-color: #F0F1EC;
+      grid-row: 3/6;
+      grid-column: 3/5;
+    }
+    .white4 {
+      background-color: #F0F1EC;
+      grid-row: 5/8;
+      grid-column: 6/7;
+    }
+    .white5 {
+      background-color: #F0F1EC;
+      grid-row: 7/8;
+      grid-column: 1/2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="painting">
+      <div class="red"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="white1"></div>
+      <div class="white2"></div>
+      <div class="white3"></div>
+      <div class="white4"></div>
+      <div class="white5"></div>
+    </div>
+  </div>
+</body>
+
+</html>
